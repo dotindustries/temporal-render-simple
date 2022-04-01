@@ -3,19 +3,19 @@ databases:
   databaseName: temporal
   user: temporal
   plan: Starter
-  region: oregon
+  region: frankfurt
 - name: temporal-db-visibility
   databaseName: visibility
   user: visibility
   plan: Starter
-  region: oregon
+  region: frankfurt
 
 services:
 - type: pserv
   name: temporal
   autoDeploy: false
   plan: Starter
-  region: oregon
+  region: frankfurt
   env: docker
   dockerfilePath: ./server/Dockerfile
   envVars:
@@ -77,7 +77,7 @@ services:
   name: temporal-ui
   autoDeploy: false
   plan: Starter
-  region: oregon
+  region: frankfurt
   env: docker
   dockerfilePath: ./web/Dockerfile
   envVars:
