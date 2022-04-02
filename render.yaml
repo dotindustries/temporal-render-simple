@@ -92,6 +92,7 @@ services:
       property: host
 - type: pserv
   name: tailscale-subnet-router
+  region: frankfurt
   env: docker
   dockerfilePath: ./tailscale/Dockerfile
   envVars:
