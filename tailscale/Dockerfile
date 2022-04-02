@@ -17,7 +17,7 @@ RUN apt-get -qq update \
   && :
 
 RUN echo "+search +short" > /root/.digrc
-COPY tailscale/run-tailscale.sh start.sh /render/
+COPY tailscale/run-tailscale.sh tailscale/start.sh /render/
 
 COPY tailscale/install-tailscale.sh /tmp
 RUN /tmp/install-tailscale.sh && rm -r /tmp/*
